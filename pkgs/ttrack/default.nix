@@ -1,6 +1,7 @@
 { lib
 , rustPlatform
 , fetchFromGitHub
+, installShellFiles
 }:
 
 rustPlatform.buildRustPackage {
@@ -15,6 +16,12 @@ rustPlatform.buildRustPackage {
   };
 
   cargoHash = "sha256-rs4XswUH5gV64iUmfZgtP0uCkA+5qFS3ZBrTVy5zqNc=";
+
+  nativeBuildInputs = [ installShellFiles ];
+
+  postInstall = ''
+    installShellCompletion --bash "dist/ttrack.bash" --zsh "dist/_ttrack" --fish "dist/ttrack.fish"
+  '';
 
   meta = with lib; {
     description = "A small CLI time tracker";
