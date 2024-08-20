@@ -4,18 +4,18 @@
 , installShellFiles
 }:
 
-rustPlatform.buildRustPackage {
+rustPlatform.buildRustPackage rec {
   pname = "ttrack";
-  version = "0.1.0";
+  version = "0.2.0";
 
   src = fetchFromGitHub {
     owner = "just1602";
-    repo = "ttrack";
-    rev = "v0.1.0";
-    hash = "sha256-gISMP/Ykvn1v8xf6mDpU3P++mduY/cpdoWsiU3aGIXA=";
+    repo = pname;
+    rev = "v${version}";
+    hash = "sha256-UxX0qYHTuYQG/LD7CuvTM6A5yARYRY/qOC4+IccSnvY=";
   };
 
-  cargoHash = "sha256-tfacvXDugQMNLE0eRBBTmthTpYXvOYoV1o8gMRO+vkc=";
+  cargoHash = "sha256-81pq37FJAS32UpImAfvdT8E8dgFNbAxSTTzW8kCmxn8=";
 
   nativeBuildInputs = [ installShellFiles ];
 
