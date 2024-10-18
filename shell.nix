@@ -8,5 +8,6 @@ pkgs.mkShell {
     pkgs.nix-init
     pkgs.nurl
     pkgs.nixfmt-rfc-style
+    pkgs.just
   ];
 }
