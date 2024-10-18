@@ -1,7 +1,9 @@
 {
   description = "My personal nix overlay";
 
-  outputs = { ... }: {
-    overlay = import ./default.nix;
-  };
+  outputs =
+    { ... }:
+    {
+      overlay = import ./default.nix;
+    };
 }

@@ -1,4 +1,3 @@
-self: super:
-{
+self: super: {
   ttrack = super.callPackage ./pkgs/ttrack { };
 }
