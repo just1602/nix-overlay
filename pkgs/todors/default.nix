@@ -6,16 +6,16 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "todors";
-  version = "0.0.1";
+  version = "0.0.2";
 
   src = fetchFromGitHub {
     owner = "just1602";
     repo = "todors";
     rev = "v${version}";
-    hash = "sha256-/qTaeZMpHtQ8pJO+4/iqXpG1FM2teIKltiCSW/pdwEM=";
+    hash = "sha256-3mq25D/b3A3dCRLj/tlsFQ+5SDUhtY/T088R9sz9jms=";
   };
 
-  cargoHash = "sha256-M46PhFW4mQ4oKxYBVO8VTk7un7PjLsyFpsknGH8GNyM=";
+  cargoHash = "sha256-ZDlf5jnsXxX+UiiGDIuW/v8+0lMUPWC8SVLJBsHG9MQ=";
 
   meta = {
     description = "Todors";
