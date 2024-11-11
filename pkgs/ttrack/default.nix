@@ -24,10 +24,10 @@ rustPlatform.buildRustPackage rec {
     installShellCompletion --bash "dist/ttrack.bash" --zsh "dist/_ttrack" --fish "dist/ttrack.fish"
   '';
 
-  meta = with lib; {
+  meta = {
     description = "A small CLI time tracker";
     homepage = "https://github.com/just1602/ttrack";
-    license = licenses.gpl3Only;
+    license = lib.licenses.gpl3Only;
     mainProgram = "ttrack";
   };
 }
