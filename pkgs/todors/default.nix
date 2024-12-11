@@ -6,13 +6,13 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "todors";
-  version = "0.0.5";
+  version = "0.0.6";
 
   src = fetchFromGitHub {
     owner = "just1602";
     repo = "todors";
     rev = "v${version}";
-    hash = "sha256-7A3YWEOCKBFk3NKRBQQpmhqewIm3fmOJxLKlsFS7jmk=";
+    hash = "sha256-pCkK3kwp8DnpM0Ak1TYJrvmcdBQvBNNxZGTnC0f0Qlg=";
   };
 
   # when debugging locally
@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage rec {
   #   url = "file:///home/goldman/dev/todors";
   # };
 
-  cargoHash = "sha256-IqBl1BhnZVvhhgZjSW/txXuzvBmTMHnvOn3Gx+2x/kU=";
+  cargoHash = "sha256-pjMCXBoLv7Q9WrBwMsXoj8XGpb+6qX4nDjzKdfPpGqw=";
 
   meta = {
     description = "Todors";
