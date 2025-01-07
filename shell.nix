@@ -9,5 +9,7 @@ pkgs.mkShell {
     pkgs.nurl
     pkgs.nixfmt-rfc-style
     pkgs.just
+    pkgs.ruby
+    pkgs.bundix
   ];
 }
