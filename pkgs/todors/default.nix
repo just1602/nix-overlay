@@ -7,6 +7,7 @@
 rustPlatform.buildRustPackage rec {
   pname = "todors";
   version = "0.0.8";
+  useFetchCargoVendor = true;
 
   src = fetchFromGitHub {
     owner = "just1602";
@@ -20,7 +21,7 @@ rustPlatform.buildRustPackage rec {
   #   url = "file:///home/goldman/dev/todors";
   # };
 
-  cargoHash = "sha256-aRJYvu+Ba92IOHurul6MsjrKJ2F5GSZl4WXp1ehPhrQ=";
+  cargoHash = "sha256-B2LRalHJlmOrZAZSl9Bq5su485RTkw3z+SLPzKaldBc=";
 
   meta = {
     description = "Todors";
