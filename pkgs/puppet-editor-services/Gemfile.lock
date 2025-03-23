@@ -8,7 +8,7 @@ GEM
       reline
     io-console (0.8.0)
     molinillo (0.8.0)
-    optimist (3.2.0)
+    optimist (3.2.1)
     puppet-editor-services (2.0.4)
       hiera-eyaml
       molinillo
@@ -16,7 +16,7 @@ GEM
       puppet-strings
       puppetfile-resolver
       yard
-    puppet-lint (4.2.4)
+    puppet-lint (4.3.0)
     puppet-strings (4.1.2)
       rgen (~> 0.9)
       yard (~> 0.9)
@@ -25,7 +25,7 @@ GEM
       semantic_puppet (~> 1.0)
     reline (0.6.0)
       io-console (~> 0.5)
-    rgen (0.9.1)
+    rgen (0.10.2)
     semantic_puppet (1.1.1)
     yard (0.9.37)
 

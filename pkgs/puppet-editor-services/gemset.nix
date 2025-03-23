@@ -46,10 +46,10 @@
     platforms = [];
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "073pk2rhyjq2vhdiz3xh2s884r15cvprw1yfjs7h9bmwdf1f9j81";
+      sha256 = "0kp3f8g7g7cbw5vfkmpdv71pphhpcxk3lpc892mj9apkd7ys1y4c";
       type = "gem";
     };
-    version = "3.2.0";
+    version = "3.2.1";
   };
   puppet-editor-services = {
     dependencies = ["hiera-eyaml" "molinillo" "puppet-lint" "puppet-strings" "puppetfile-resolver" "yard"];
@@ -67,10 +67,10 @@
     platforms = [];
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1n2pffwxj1n33hc7aw74g6a4gn5v7rawcs7rglidbdq1g4kzd829";
+      sha256 = "1lbr7smgx3k48zxrsp4kkkpwfgr6q2mjyz0bz5r14j0in5j5j3xa";
       type = "gem";
     };
-    version = "4.2.4";
+    version = "4.3.0";
   };
   puppet-strings = {
     dependencies = ["rgen" "yard"];
@@ -110,10 +110,10 @@
     platforms = [];
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "1abg3frzak6inwbr4caq6mfd5spx37xnwlxss8615jr12wh525vp";
+      sha256 = "0wgk4brd1v63ivdh5nnlkynfxk8m7bac9q50ydgq3d50hx4ghy6r";
       type = "gem";
     };
-    version = "0.9.1";
+    version = "0.10.2";
   };
   semantic_puppet = {
     groups = ["default"];
